@@ -7,7 +7,13 @@ import HomeScreen from '../screens/HomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 
-const Stack = createNativeStackNavigator();
+type RootStackParamList = {
+  Login: undefined;
+  Home: undefined;
+  SignUp: undefined;
+};
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const AppNavigator = () => {
   return (

@@ -3,12 +3,22 @@ import React from 'react';
 
 const HomeScreen = () => {
   return (
-    <View>
-      <Text>HomeScreen</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>¡Bienvenido a la Página Principal!</Text>
     </View>
   );
 };
 
-export default HomeScreen;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  text: {
+    fontSize: 24,
+  },
+});
 
-// const styles = StyleSheet.create({})
+export default HomeScreen;
