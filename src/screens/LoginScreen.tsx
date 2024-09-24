@@ -32,12 +32,10 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
 
   return (
     <LinearGradient
-      colors={['#204263', '#1e313e', '#397378']}
+      colors={['#2c3437', '#1e313e', '#274280']}
       useAngle
-      angle={135}
-      angleCenter={{ x: 0, y: 1}}
-      // start={{ x: 0, y: 0.8 }}
-      // end={{ x: 1, y: 1.8 }}
+      angle={115}
+      angleCenter={{ x: -0.2, y: 1.5}}
       style={styles.container}
     >
       <View style={styles.header}>
