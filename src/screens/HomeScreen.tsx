@@ -1,10 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import React from 'react';
+import HeaderHome from '../components/HomeScreen/HeaderHome';
+import StoriesHome from '../components/HomeScreen/StoriesHome';
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>¡Bienvenido a la Página Principal!</Text>
+      <HeaderHome/>
+      <StoriesHome/>
     </View>
   );
 };
@@ -12,12 +15,10 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-  text: {
-    fontSize: 24,
+    backgroundColor: '#18191b',
+    gap: 5,
   },
 });
 
